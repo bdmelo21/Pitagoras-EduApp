@@ -4,10 +4,14 @@ const path = require("path");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+  res.render("index");
 });
 router.all("*", (req, res, next) => {
-  if (req.originalUrl.startsWith("/api")) {
+  if (
+    req.originalUrl.startsWith(
+      "/api" || "/pitagoras" || "/dashboard" || "/zoom"
+    )
+  ) {
     // skip any /api routes
     next();
   } else {
