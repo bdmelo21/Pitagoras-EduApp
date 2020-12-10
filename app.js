@@ -65,7 +65,7 @@ app.use(
   })
 );
 const index = require("./routes/index");
-app.use("/api", index);
+app.use("/", index);
 const authRoutes = require("./routes/auth-routes");
 app.use("/pitagoras", authRoutes);
 const mapRoutes = require("./routes/maps-routes");
