@@ -1,6 +1,7 @@
 const express = require("express");
 const { findByIdAndUpdate } = require("../models/teacheravailable-model");
 const router = express.Router();
+const Rating = require("../models/rating");
 const Teacher = require("../models/teacheravailable-model");
 const UserAvailable = require("../models/useravailable");
 
@@ -108,6 +109,28 @@ router.put("/updateavailableuser/:id", (req, res) => {
     zoompassword: zoompassword,
   }).then(() => {
     res.json({ message: `Project with id ${req.params.id} was updated` });
+  });
+});
+router.post(`/updatedteacherrate/:rating`, (req, res) => {
+  let userTeacher = req.body.usernameTeacher;
+  let userStudent = req.body.usernameStudent;
+  let rating = req.params.rating;
+  Rating.post({
+    usernameStudent: userStudent,
+    userTeacher: userTeacher,
+    rating: rating,
+  })
+    .then((aNewRatingAvailable) => {
+      res.status(200).json(aNewRatingAvailable);
+    })
+    .catch((err) => {
+      res.status(400).json({ message: "Saving user to database went wrong." });
+    });
+});
+router.get(`ratings/:username`, (req, res) => {
+  let userTeacher = req.params.username;
+  Rating.find({ userTeacher: userTeacher }).then((requestsToApprove) => {
+    res.json(requestsToApprove);
   });
 });
 
