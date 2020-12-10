@@ -81,8 +81,8 @@ router.get("/allusersavailable/:username", (req, res) => {
   );
 });
 router.get("/allteachersavailable/:username", (req, res) => {
-  const userTeacher = req.params.username;
-  UserAvailable.find({ usernameTeacher: userTeacher, isApproved: true }).then(
+  const userStudent = req.params.username;
+  UserAvailable.find({ usernameStudent: userStudent, isApproved: true }).then(
     (requestsToApprove) => {
       res.json(requestsToApprove);
     }
