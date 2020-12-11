@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ab070c6.chunk.css",
-    "main.js": "/static/js/main.3d037be0.chunk.js",
-    "main.js.map": "/static/js/main.3d037be0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a7fe674a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a7fe674a.js.map",
-    "static/css/2.e15a5328.chunk.css": "/static/css/2.e15a5328.chunk.css",
-    "static/js/2.cb985558.chunk.js": "/static/js/2.cb985558.chunk.js",
-    "static/js/2.cb985558.chunk.js.map": "/static/js/2.cb985558.chunk.js.map",
-    "static/js/3.68c349ce.chunk.js": "/static/js/3.68c349ce.chunk.js",
-    "static/js/3.68c349ce.chunk.js.map": "/static/js/3.68c349ce.chunk.js.map",
+    "main.css": "/static/css/main.b849da8e.chunk.css",
+    "main.js": "/static/js/main.4f4c589d.chunk.js",
+    "main.js.map": "/static/js/main.4f4c589d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6bdb9999.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6bdb9999.js.map",
+    "static/css/2.2b7ca883.chunk.css": "/static/css/2.2b7ca883.chunk.css",
+    "static/js/2.eba2430a.chunk.js": "/static/js/2.eba2430a.chunk.js",
+    "static/js/2.eba2430a.chunk.js.map": "/static/js/2.eba2430a.chunk.js.map",
+    "static/js/3.b72562e6.chunk.js": "/static/js/3.b72562e6.chunk.js",
+    "static/js/3.b72562e6.chunk.js.map": "/static/js/3.b72562e6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.e15a5328.chunk.css.map": "/static/css/2.e15a5328.chunk.css.map",
-    "static/css/main.0ab070c6.chunk.css.map": "/static/css/main.0ab070c6.chunk.css.map",
-    "static/js/2.cb985558.chunk.js.LICENSE.txt": "/static/js/2.cb985558.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/moren-hsu-VLaKsTkmVhk-unsplash.141d65c6.jpg"
+    "static/css/2.2b7ca883.chunk.css.map": "/static/css/2.2b7ca883.chunk.css.map",
+    "static/css/main.b849da8e.chunk.css.map": "/static/css/main.b849da8e.chunk.css.map",
+    "static/js/2.eba2430a.chunk.js.LICENSE.txt": "/static/js/2.eba2430a.chunk.js.LICENSE.txt",
+    "static/media/PITAGORAS.019b3ca1.svg": "/static/media/PITAGORAS.019b3ca1.svg",
+    "static/media/App.css": "/static/media/moren-hsu-VLaKsTkmVhk-unsplash.141d65c6.jpg",
+    "static/media/svg-1.198c8835.svg": "/static/media/svg-1.198c8835.svg",
+    "static/media/svg-2.5f11287c.svg": "/static/media/svg-2.5f11287c.svg",
+    "static/media/svg-3.5394e075.svg": "/static/media/svg-3.5394e075.svg",
+    "static/media/svg-5.b8e41778.svg": "/static/media/svg-5.b8e41778.svg",
+    "static/media/video.f1c18255.mp4": "/static/media/video.f1c18255.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.a7fe674a.js",
-    "static/css/2.e15a5328.chunk.css",
-    "static/js/2.cb985558.chunk.js",
-    "static/css/main.0ab070c6.chunk.css",
-    "static/js/main.3d037be0.chunk.js"
+    "static/js/runtime-main.6bdb9999.js",
+    "static/css/2.2b7ca883.chunk.css",
+    "static/js/2.eba2430a.chunk.js",
+    "static/css/main.b849da8e.chunk.css",
+    "static/js/main.4f4c589d.chunk.js"
   ]
 }
