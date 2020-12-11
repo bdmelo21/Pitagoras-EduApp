@@ -112,12 +112,12 @@ router.put("/updateavailableuser/:id", (req, res) => {
   });
 });
 router.post(`/updatedteacherrate/:rating`, (req, res) => {
-  let userTeacher = req.body.usernameTeacher;
   let userStudent = req.body.usernameStudent;
+  let userTeacher = req.body.usernameTeacher;
   let rating = req.params.rating;
-  Rating.post({
+  Rating.create({
     usernameStudent: userStudent,
-    userTeacher: userTeacher,
+    usernameTeacher: userTeacher,
     rating: rating,
   })
     .then((aNewRatingAvailable) => {
@@ -127,10 +127,10 @@ router.post(`/updatedteacherrate/:rating`, (req, res) => {
       res.status(400).json({ message: "Saving user to database went wrong." });
     });
 });
-router.get(`ratings/:username`, (req, res) => {
-  let userTeacher = req.params.username;
-  Rating.find({ userTeacher: userTeacher }).then((requestsToApprove) => {
-    res.json(requestsToApprove);
+router.get("/ratings/:username", (req, res) => {
+  const userTeacher = req.params.username;
+  Rating.find({ usernameTeacher: userTeacher }).then((requestsApproved) => {
+    res.json(requestsApproved);
   });
 });
 
